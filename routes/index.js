@@ -35,10 +35,10 @@ body{
 `
 
 router.post('/create', function(req, res) {
-  fs.mkdirSync(homedir + '/desktop/' + req.body.name);
-  fs.writeFile(homedir + '/desktop/' + req.body.name + '/index.html', index, function(err) {});
-  fs.writeFile(homedir + '/desktop/' + req.body.name + '/style.css', style, function(err) {});
-  fs.writeFile(homedir + '/desktop/' + req.body.name + '/script.js', "", function(err) {});
+  fs.mkdirSync(homedir + '/' + req.body.name);
+  fs.writeFile(homedir + '/' + req.body.name + '/index.html', index, function(err) {});
+  fs.writeFile(homedir + '/' + req.body.name + '/style.css', style, function(err) {});
+  fs.writeFile(homedir + '/' + req.body.name + '/script.js', "", function(err) {});
   res.redirect('/');
 });
 
