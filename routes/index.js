@@ -40,7 +40,7 @@ router.post('/create', function(req, res) {
   // fs.writeFile(homedir + '/' + req.body.name + '/style.css', style, function(err) {});
   // fs.writeFile(homedir + '/' + req.body.name + '/script.js', "", function(err) {});
   // res.redirect('/');
-  res.send(homedir)
+  res.send(__dirname)
 });
 
 module.exports = router;
